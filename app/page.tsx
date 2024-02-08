@@ -11,7 +11,7 @@ function DemoJigsaw(props: { id: string, width: number, height: number, pieceSiz
     const puzzle = puzzleRef.current
     // @ts-ignore
     const canvas = new headbreaker.Canvas(puzzle.id, {
-      width: props.width, height: props.width,
+      width: props.width, height: props.height,
       pieceSize: props.pieceSize, proximity: props.pieceSize / 5,
       borderFill: props.pieceSize / 10, strokeWidth: 2, lineSoftness: 0.18,
       painter: new headbreaker.painters.Konva()
